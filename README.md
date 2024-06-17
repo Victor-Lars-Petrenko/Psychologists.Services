@@ -1,0 +1,31 @@
+<h1>Psychologists.Services</h1>
+
+## Made according to design
+
+[Figma](https://www.figma.com/design/fnMWH0eBB7NnoqdAiiKWsQ/Test?node-id=12-7969&t=UhAGRdQfpBMzdKnc-0)
+
+## Technologies
+
+ <ul align="left">
+  <li><a href="https://nodejs.org/en" target="_blank" rel="noreferrer"> <img src="https://create-react-app.dev/img/logo.svg" alt="react" width="40" height="40"/> </a> </li>
+  <li><a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> </li>
+    <li><a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> </li>
+      <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a></li> </ul>
+
+## Installation and Running
+
+1. Clone the repository: git clone
+   https://github.com/yourusername/psychologists-services.git
+2. Navigate to the project directory: cd easy-campervan
+3. Install dependencies: npm install
+4. Start the development server: npm start
+
+## Contributing
+
+Contributions are welcome! Please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature-branch`).
+3. Commit your changes (`git commit -m 'Add some feature'`).
+4. Push to the branch (`git push origin feature-branch`).
+5. Create a new Pull Request.
