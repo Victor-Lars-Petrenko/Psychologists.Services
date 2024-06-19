@@ -2,7 +2,7 @@
 
 ## Made according to design
 
-[Figma](https://www.figma.com/design/fnMWH0eBB7NnoqdAiiKWsQ/Test?node-id=12-7969&t=UhAGRdQfpBMzdKnc-0)
+[Figma](https://www.figma.com/design/I5vjNb0NsJOpQRnRpMloSY/Psychologists.Services?node-id=0-1&t=TB1JBy0HqkbejLBY-0)
 
 [Task](https://docs.google.com/document/d/1PrTxBn6HQbb0Oz17g5_zvyLGIOZg0TIP3HPaEEp6ZLs/edit)
 
