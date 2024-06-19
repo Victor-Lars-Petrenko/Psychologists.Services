@@ -1,0 +1,1 @@
+{"version":3,"file":"static/js/141.28246104.chunk.js","mappings":"yKAAA,MAIA,EAJsBA,KACbC,EAAAA,EAAAA,KAAA,WAAAC,SAAS,iB","sources":["pages/Psychologists/Psychologists.jsx"],"sourcesContent":["const Psychologists = () => {\n  return <section>Psychologists</section>;\n};\n\nexport default Psychologists;\n"],"names":["Psychologists","_jsx","children"],"sourceRoot":""}
