@@ -1,3 +1,22 @@
+@import-normalize;
+
+:root {
+  --main-color: #3470ff;
+  --accessory-color: rgba(52, 112, 255, 0.2);
+
+  --background-color: rgb(200, 193, 193);
+
+  --dropdown-color: #ffffff;
+
+  --text-color: #191a15;
+  --text-color-rgb: 25, 26, 21;
+  --btn-text-color: #fbfbfb;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 html {
   margin: 0 auto;
 }
@@ -7,7 +26,6 @@ body {
   font-family: "Inter", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  box-sizing: border-box;
 }
 
 code {
@@ -48,13 +66,10 @@ button {
 
 input {
   display: block;
-  box-sizing: border-box;
   border: none;
   outline: none;
 }
 
-label,
-div,
-li {
-  box-sizing: border-box;
+a {
+  text-decoration: none;
 }

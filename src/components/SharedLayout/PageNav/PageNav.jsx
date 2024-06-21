@@ -1,8 +1,10 @@
 import { NavLink } from "react-router-dom";
-import css from "./PageNav.module.css";
+
 import getNavItems from "assets/items/getNavItems";
 
-const PageNav = ({ auth = true }) => {
+import css from "./PageNav.module.css";
+
+const PageNav = ({ auth }) => {
   const items = getNavItems(auth);
 
   const elements = items.map(({ linkTo, text }) => (

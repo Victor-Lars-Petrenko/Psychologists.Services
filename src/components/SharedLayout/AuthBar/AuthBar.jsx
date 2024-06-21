@@ -4,17 +4,17 @@ const NavBar = ({ auth }) => {
   return auth ? (
     <ul className={css.authBarList}>
       <li>
-        <button>Log In</button>
+        <button type="button">Log In</button>
       </li>
       <li>
-        <button>Registration</button>
+        <button type="button">Registration</button>
       </li>
     </ul>
   ) : (
     <ul className={css.userInfoList}>
       <li>UserInfo</li>
       <li>
-        <button>Log Out</button>
+        <button type="button">Log Out</button>
       </li>
     </ul>
   );
