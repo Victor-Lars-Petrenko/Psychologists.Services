@@ -5,7 +5,8 @@ import css from "./Logo.module.css";
 const Logo = () => {
   return (
     <NavLink to="/" className={css.logo}>
-      <span className={css.marked}>psychologists.</span>services
+      psychologists<span className={css.point}>.</span>
+      <span className={css.servicesSpan}>services</span>
     </NavLink>
   );
 };

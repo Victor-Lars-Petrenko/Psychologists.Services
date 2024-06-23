@@ -16,7 +16,7 @@ const PageNav = ({ auth }) => {
   ));
 
   return (
-    <nav>
+    <nav className={css.pageNav}>
       <ul className={css.list}>{elements}</ul>
     </nav>
   );

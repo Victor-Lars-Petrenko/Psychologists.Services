@@ -8,7 +8,7 @@ import Logo from "./Logo";
 
 import css from "./SharedLayout.module.css";
 
-const SharedLayout = ({ auth = true }) => {
+const SharedLayout = ({ auth = false }) => {
   return (
     <>
       {auth ? (
@@ -19,8 +19,10 @@ const SharedLayout = ({ auth = true }) => {
         </header>
       ) : (
         <header className={css.header}>
-          <Logo />
-          <PageNav auth={auth} />
+          <div className={css.navWrap}>
+            <Logo />
+            <PageNav auth={auth} />
+          </div>
           <AuthBar auth={auth} />
         </header>
       )}

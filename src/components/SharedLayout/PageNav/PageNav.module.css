@@ -1,6 +1,36 @@
+.pageNav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .list {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 40px;
+}
+
+.link {
+  position: relative;
+  line-height: 125%;
+  letter-spacing: -0.01em;
+  color: var(--text-color);
+}
+
+.link::after {
+  position: absolute;
+  display: none;
+  top: 23.2px;
+  left: calc(50% - 4px);
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--main-color);
+  cursor: default;
+}
+
+.link:global(.active)::after {
+  display: block;
 }

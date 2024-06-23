@@ -7,28 +7,27 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(17, 18, 19, 0.4);
-  z-index: 999;
+  background-color: rgba(var(--text-color-rgb), 0.6);
+  z-index: 2;
 }
 
 .modal {
   position: relative;
-  border-radius: 20px;
-  padding: 40px;
+  border-radius: 30px;
+  padding: 64px;
   background-color: var(--btn-text-color);
-  width: 982px;
-  height: 720px;
-  overflow-y: auto;
+  /* width: 982px;
+  height: 720px; */
 }
 
 .iconCross {
   width: 32px;
   height: 32px;
-  stroke: var(--main-text-color);
+  stroke: var(--text-color);
 }
 
 .closeBtn {
   position: absolute;
-  right: 40px;
-  top: 40px;
+  right: 20px;
+  top: 20px;
 }

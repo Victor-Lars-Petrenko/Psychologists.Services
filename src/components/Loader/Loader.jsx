@@ -1,10 +1,11 @@
-import { Bars } from "react-loader-spinner";
+import { Puff } from "react-loader-spinner";
+
 import css from "./Loader.module.css";
 
 const Loader = () => {
   return (
     <div className={css.loader}>
-      <Bars visible={true} color="#e44848" />
+      <Puff visible={true} color="#3470ff" />
     </div>
   );
 };
