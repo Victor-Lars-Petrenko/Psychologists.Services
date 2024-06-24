@@ -1,0 +1,53 @@
+.modalHeading {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 120%;
+  letter-spacing: -0.02em;
+  color: var(--text-color);
+  margin-bottom: 20px;
+}
+
+.modalText {
+  line-height: 125%;
+  color: rgba(var(--text-color-rgb), 0.5);
+  margin-bottom: 40px;
+  width: 438px;
+}
+
+.logInInput {
+  border: 1px solid rgba(var(--text-color-rgb), 0.1);
+  border-radius: 12px;
+  padding: 16px 18px;
+  width: 438px;
+  height: 52px;
+  line-height: 125%;
+  color: var(--text-color);
+  background-color: transparent;
+  margin-bottom: 18px;
+}
+
+.password {
+  margin-bottom: 0;
+}
+
+input::placeholder {
+  opacity: 1;
+}
+
+.passwordWrap {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.toggleBtn {
+  position: absolute;
+  top: 16px;
+  right: 18px;
+}
+
+.iconToggleBtn {
+  width: 20px;
+  height: 20px;
+  stroke: var(--text-color);
+  fill: none;
+}

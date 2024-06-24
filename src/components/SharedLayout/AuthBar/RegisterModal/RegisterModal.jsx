@@ -1,27 +1,20 @@
 import Modal from "components/Modal";
 
-import css from "./RegisterModal.module.css";
+import AuthModal from "../AuthModal";
 
 const RegisterModal = ({ close }) => {
+  const handleSubmit = state => {
+    console.log(state);
+  };
+
   return (
     <Modal close={close}>
-      <h2 className={css.modalHeading}>Log In</h2>
-      <p className={css.modalText}>
-        Welcome back! Please enter your credentials to access your account and
-        continue your search for a psychologist.
-      </p>
-      <input type="text" className={css.name} placeholder="name" name="name" />
-      <input
-        type="text"
-        className={css.email}
-        placeholder="email"
-        name="email"
-      />
-      <input
-        type="text"
-        className={css.password}
-        placeholder="password"
-        name="password"
+      <AuthModal
+        title="Registration"
+        text="Thank you for your interest in our platform! In order to register, we need some information. Please provide us with the following information."
+        btnText="Sign Up"
+        handleSubmit={handleSubmit}
+        isRegister={true}
       />
     </Modal>
   );

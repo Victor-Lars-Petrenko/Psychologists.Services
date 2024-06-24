@@ -6,6 +6,7 @@ import RegisterModal from "./RegisterModal";
 import sprite from "../../../assets/images/icons.svg";
 
 import css from "./AuthBar.module.css";
+import Button from "components/Button";
 
 const NavBar = ({ auth }) => {
   const [isLogInOpen, setIsLogInOpen] = useState(false);
@@ -39,14 +40,21 @@ const NavBar = ({ auth }) => {
       ) : (
         <ul className={css.authBarList}>
           <li>
-            <button type="button" className={css.logInBtn} onClick={open}>
-              Log In
-            </button>
+            <Button
+              text="Log In"
+              width="124px"
+              height="48px"
+              onClick={open}
+              styleVariant="transparentBtn"
+            />
           </li>
           <li>
-            <button type="button" className={css.registerBtn} onClick={open}>
-              Registration
-            </button>
+            <Button
+              text="Registration"
+              width="171px"
+              height="48px"
+              onClick={open}
+            />
           </li>
         </ul>
       )}
