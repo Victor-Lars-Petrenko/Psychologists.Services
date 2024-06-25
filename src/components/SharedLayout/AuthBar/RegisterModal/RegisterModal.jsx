@@ -2,6 +2,8 @@ import Modal from "components/Modal";
 
 import AuthModal from "../AuthModal";
 
+const initialState = { name: "", email: "", password: "" };
+
 const RegisterModal = ({ close }) => {
   const handleSubmit = state => {
     console.log(state);
@@ -15,6 +17,7 @@ const RegisterModal = ({ close }) => {
         btnText="Sign Up"
         handleSubmit={handleSubmit}
         isRegister={true}
+        initialState={initialState}
       />
     </Modal>
   );

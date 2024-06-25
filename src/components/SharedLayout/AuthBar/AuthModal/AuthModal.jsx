@@ -6,9 +6,14 @@ import sprite from "../../../../assets/images/icons.svg";
 
 import css from "./AuthModal.module.css";
 
-const initialState = { name: "", email: "", password: "" };
-
-const AuthModal = (handleSubmit = null, title, text, btnText, isRegister) => {
+const AuthModal = ({
+  handleSubmit = null,
+  title,
+  text,
+  btnText,
+  isRegister,
+  initialState,
+}) => {
   const [formState, setFormState] = useState(initialState);
   const [showPassword, setShowPassword] = useState(false);
 

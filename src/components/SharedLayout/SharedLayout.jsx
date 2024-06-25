@@ -8,7 +8,7 @@ import Logo from "./Logo";
 
 import css from "./SharedLayout.module.css";
 
-const SharedLayout = ({ auth = false }) => {
+const SharedLayout = ({ auth = true }) => {
   return (
     <>
       {auth ? (

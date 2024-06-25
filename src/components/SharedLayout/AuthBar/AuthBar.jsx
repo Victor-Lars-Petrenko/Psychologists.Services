@@ -18,25 +18,28 @@ const NavBar = ({ auth }) => {
   };
   const logInClose = () => setIsLogInOpen(false);
   const registerClose = () => setIsRegisterOpen(false);
+  const onLogOut = () => console.log("want to log out");
 
   return (
     <>
       {auth ? (
-        <ul className={css.userInfoList}>
-          <li className={css.userProfile}>
+        <div className={css.userInfoList}>
+          <div className={css.userProfile}>
             <div className={css.userPhoto}>
               <svg className={css.iconUser}>
                 <use href={`${sprite}#icon-user`} />
               </svg>
             </div>
             <p className={css.userName}>Vitek</p>
-          </li>
-          <li>
-            <button type="button" className={css.logInBtn}>
-              Log Out
-            </button>
-          </li>
-        </ul>
+          </div>
+          <Button
+            text="Log Out"
+            width="135px"
+            height="48px"
+            onClick={onLogOut}
+            styleVariant="transparentBtn"
+          />
+        </div>
       ) : (
         <ul className={css.authBarList}>
           <li>

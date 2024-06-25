@@ -2,6 +2,8 @@ import Modal from "components/Modal";
 
 import AuthModal from "../AuthModal";
 
+const initialState = { email: "", password: "" };
+
 const LogInModal = ({ close }) => {
   const handleSubmit = state => {
     console.log(state);
@@ -15,6 +17,7 @@ const LogInModal = ({ close }) => {
         continue your search for a psychologist."
         btnText="Log In"
         handleSubmit={handleSubmit}
+        initialState={initialState}
       />
     </Modal>
   );
