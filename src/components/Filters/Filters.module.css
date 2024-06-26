@@ -1,0 +1,24 @@
+.filterBtn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--main-color);
+  padding: 16px 18px;
+  color: var(--btn-text-color);
+  border-radius: 14px;
+  width: 226px;
+  height: 48px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.filterBtn:hover,
+.filterBtn:focus {
+  background-color: var(--btn-hover-color);
+}
+
+.iconChevronDown {
+  fill: none;
+  stroke: currentColor;
+  width: 20px;
+  height: 20px;
+}

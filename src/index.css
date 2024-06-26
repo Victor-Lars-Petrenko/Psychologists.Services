@@ -4,13 +4,15 @@
   --main-color: #3470ff;
   --accessory-color: rgba(52, 112, 255, 0.2);
 
-  --background-color: rgb(200, 193, 193);
+  --background-color: #f3f3f3;
 
   --dropdown-color: #ffffff;
 
   --text-color: #191a15;
   --text-color-rgb: 25, 26, 21;
+
   --btn-text-color: #fbfbfb;
+  --btn-hover-color: #255ee8;
 }
 
 * {

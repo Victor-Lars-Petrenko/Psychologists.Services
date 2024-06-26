@@ -11,9 +11,21 @@
 .mainColorBtn {
   background-color: var(--main-color);
   color: var(--btn-text-color);
+  transition: background-color 0.3s ease-in-out;
+}
+
+.mainColorBtn:hover,
+.mainColorBtn:focus {
+  background-color: var(--btn-hover-color);
 }
 
 .transparentBtn {
   border: 1px solid rgba(var(--text-color-rgb), 0.2);
   color: var(--text-color);
+  transition: border-color 0.3s ease-in-out;
+}
+
+.transparentBtn:hover,
+.transparentBtn:focus {
+  border-color: var(--btn-hover-color);
 }

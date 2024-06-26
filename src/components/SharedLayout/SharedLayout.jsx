@@ -1,5 +1,5 @@
 import { Suspense } from "react";
-import { Outlet } from "react-router-dom";
+import { Outlet, useLocation } from "react-router-dom";
 
 import Loader from "../Loader";
 import PageNav from "./PageNav/PageNav";
@@ -8,17 +8,24 @@ import Logo from "./Logo";
 
 import css from "./SharedLayout.module.css";
 
-const SharedLayout = ({ auth = true }) => {
+const SharedLayout = ({ auth = false }) => {
+  const location = useLocation();
+
+  let headerStyle = css.header;
+  if (location.pathname === "/") {
+    headerStyle += ` ${css.homeHeader}`;
+  }
+
   return (
     <>
       {auth ? (
-        <header className={css.header}>
+        <header className={headerStyle}>
           <Logo />
           <PageNav auth={auth} />
           <AuthBar auth={auth} />
         </header>
       ) : (
-        <header className={css.header}>
+        <header className={headerStyle}>
           <div className={css.navWrap}>
             <Logo />
             <PageNav auth={auth} />

@@ -1,0 +1,7 @@
+.psychologists {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  background-color: var(--background-color);
+  padding: 64px 128px 100px;
+}

@@ -4,6 +4,15 @@
   align-items: center;
   padding: 24px 128px;
   border-bottom: 1px solid rgba(var(--text-color-rgb), 0.1);
+  background: var(--background-color);
+}
+
+.homeHeader {
+  background: linear-gradient(
+    to right,
+    var(--btn-text-color),
+    rgba(52, 112, 255, 0.1)
+  );
 }
 
 .navWrap {
