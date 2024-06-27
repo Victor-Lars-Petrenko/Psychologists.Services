@@ -1,16 +1,10 @@
-import RegisterModal from "components/SharedLayout/AuthBar/RegisterModal";
+import { Link } from "react-router-dom";
 
 import sprite from "../../assets/images/icons.svg";
 
 import css from "./HomePage.module.css";
-import { useState } from "react";
 
 const HomePage = () => {
-  const [isRegisterOpen, setIsRegisterOpen] = useState(false);
-
-  const registerOpen = () => setIsRegisterOpen(true);
-  const registerClose = () => setIsRegisterOpen(false);
-
   return (
     <>
       <main className={css.homePage}>
@@ -24,12 +18,12 @@ const HomePage = () => {
             guide in your own life with the help of our experienced
             psychologists.
           </p>
-          <button type="button" className={css.mainBtn} onClick={registerOpen}>
+          <Link to="/psychologists" className={css.mainBtn}>
             Get started
             <svg className={css.iconArrow}>
               <use href={`${sprite}#icon-arrow`} />
             </svg>
-          </button>
+          </Link>
         </div>
         <div className={css.hero}>
           <div className={css.users}>
@@ -55,7 +49,6 @@ const HomePage = () => {
           </div>
         </div>
       </main>
-      {isRegisterOpen && <RegisterModal close={registerClose} />}
     </>
   );
 };

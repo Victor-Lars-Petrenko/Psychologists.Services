@@ -1,0 +1,12 @@
+.cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 64px;
+}
+
+.cardList {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}

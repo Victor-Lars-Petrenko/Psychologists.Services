@@ -1,0 +1,32 @@
+.dropdown {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  left: 0;
+  top: calc(100% + 8px);
+  z-index: 2;
+  background-color: #fff;
+  border-radius: 14px;
+  width: 226px;
+  box-shadow: 0 20px 69px 0 #00000012;
+  padding: 14px 18px;
+}
+
+.dropdownBtn {
+  line-height: 125%;
+  color: var(--text-color);
+  opacity: 0.3;
+  width: 100%;
+  text-align: left;
+  transition: transform 0.3s ease-in-out;
+}
+
+.dropdownBtn:hover,
+.dropdownBtn:focus {
+  transform: translate(4px);
+}
+
+.selectedBtn {
+  opacity: 1;
+}
