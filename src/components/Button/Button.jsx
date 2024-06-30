@@ -3,7 +3,7 @@ import css from "./Button.module.css";
 const Button = ({
   text,
   width,
-  height,
+  height = "48px",
   onClick = null,
   styleVariant = "mainColor",
   type = "button",

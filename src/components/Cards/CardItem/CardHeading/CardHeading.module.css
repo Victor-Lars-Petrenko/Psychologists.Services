@@ -1,0 +1,74 @@
+.cardHeadingWrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 24px;
+}
+
+.psychologist {
+  font-weight: 500;
+  line-height: 150%;
+  color: #8a8a89;
+  margin-bottom: 8px;
+}
+
+.name {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 100%;
+  color: var(--text-color);
+}
+
+.cardOperationWrap {
+  display: flex;
+  gap: 28px;
+  align-items: center;
+}
+
+.ratingPriceWrap {
+  display: flex;
+  gap: 32px;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-weight: 500;
+  line-height: 150%;
+  color: var(--text-color);
+  position: relative;
+}
+
+.rating::after {
+  position: absolute;
+  content: "";
+  background-color: rgba(var(--text-color-rgb), 0.2);
+  height: 16px;
+  width: 1px;
+  right: -16px;
+}
+
+.iconStar {
+  width: 16px;
+  height: 16px;
+  fill: #ffc531;
+  stroke: #ffc531;
+}
+
+.price {
+  font-weight: 500;
+  line-height: 150%;
+  color: var(--text-color);
+}
+
+.pricePerHour {
+  color: #38cd3e;
+}
+
+.iconHeart {
+  width: 24px;
+  height: 24px;
+  fill: none;
+  stroke: var(--text-color);
+}
