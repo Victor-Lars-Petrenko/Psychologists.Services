@@ -1,5 +1,5 @@
 import { initializeApp } from "firebase/app";
-import { getDatabase, ref, child, get } from "firebase/database";
+import { getDatabase } from "firebase/database";
 
 const firebaseConfig = {
   apiKey: "AIzaSyCemOTm4qwRpwOJcYHEsM_YTmH1yVdjMIc",
@@ -14,20 +14,6 @@ const firebaseConfig = {
 };
 
 const app = initializeApp(firebaseConfig);
-const db = getDatabase(app);
+const firebaseDatabase = getDatabase(app);
 
-const dbRef = ref(db);
-
-const data = get(child(dbRef, "psychologists"))
-  .then(snapshot => {
-    if (snapshot.exists()) {
-      console.log(snapshot.val());
-    } else {
-      console.log("No data available");
-    }
-  })
-  .catch(error => {
-    console.error(error);
-  });
-
-export default data;
+export default firebaseDatabase;

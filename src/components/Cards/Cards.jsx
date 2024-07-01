@@ -61,14 +61,16 @@ const Cards = () => {
   ];
 
   return (
-    <section className={css.cards}>
-      <ul className={css.cardList}>
-        {data.map(item => (
-          <CardItem key={item.name} card={item} />
-        ))}
-      </ul>
-      <Button text="Load more" width="176px" onClick={null} />
-    </section>
+    data[0] && (
+      <section className={css.cards}>
+        <ul className={css.cardList}>
+          {data.map(item => (
+            <CardItem key={item.name} card={item} />
+          ))}
+        </ul>
+        <Button text="Load more" width="176px" onClick={null} />
+      </section>
+    )
   );
 };
 
