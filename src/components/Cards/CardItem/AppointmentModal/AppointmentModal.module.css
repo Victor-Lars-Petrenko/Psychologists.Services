@@ -1,0 +1,35 @@
+.modalTitle {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 120%;
+  letter-spacing: -0.02em;
+  color: var(--text-color);
+}
+
+.modalDescription {
+  line-height: 125%;
+  color: rgba(var(--text-color-rgb), 0.5);
+}
+
+.psychologistWrap {
+  display: flex;
+  gap: 14px;
+}
+
+.avatar {
+  border-radius: 15px;
+  width: 44px;
+  height: 44px;
+}
+
+.modalInput {
+  border: 1px solid rgba(var(--text-color-rgb), 0.1);
+  border-radius: 12px;
+  padding: 16px 18px;
+  width: 472px;
+  height: 52px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 125%;
+  color: var(--text-color);
+}

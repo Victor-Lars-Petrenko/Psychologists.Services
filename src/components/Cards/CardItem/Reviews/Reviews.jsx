@@ -4,7 +4,7 @@ import sprite from "../../../../assets/images/icons.svg";
 
 import css from "./Reviews.module.css";
 
-const Reviews = ({ reviews }) => {
+const Reviews = ({ reviews, openModal }) => {
   return (
     <div>
       <ul className={css.reviewsList}>
@@ -26,7 +26,7 @@ const Reviews = ({ reviews }) => {
           </li>
         ))}
       </ul>
-      <Button text="Make an appointment" width="227px" />
+      <Button text="Make an appointment" width="227px" onClick={openModal} />
     </div>
   );
 };
