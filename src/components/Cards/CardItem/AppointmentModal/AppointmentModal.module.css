@@ -1,19 +1,26 @@
+.appointmentModal {
+  width: 472px;
+}
+
 .modalTitle {
   font-weight: 500;
   font-size: 40px;
   line-height: 120%;
   letter-spacing: -0.02em;
   color: var(--text-color);
+  margin-bottom: 20px;
 }
 
 .modalDescription {
   line-height: 125%;
   color: rgba(var(--text-color-rgb), 0.5);
+  margin-bottom: 40px;
 }
 
 .psychologistWrap {
   display: flex;
   gap: 14px;
+  margin-bottom: 40px;
 }
 
 .avatar {
@@ -22,14 +29,56 @@
   height: 44px;
 }
 
+.textWrap {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.explanation {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 133%;
+  color: #8a8a89;
+}
+
+.name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--text-color);
+}
+
 .modalInput {
   border: 1px solid rgba(var(--text-color-rgb), 0.1);
   border-radius: 12px;
   padding: 16px 18px;
-  width: 472px;
+  width: 100%;
   height: 52px;
   font-weight: 400;
   font-size: 16px;
   line-height: 125%;
+  color: var(--text-color);
+  background-color: transparent;
+  margin-bottom: 16px;
+}
+
+.wrappedInput {
+  width: calc(100% - 8px);
+  margin-bottom: 0;
+}
+
+.inputWrap {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.modalTextarea {
+  height: 116px;
+  margin-bottom: 40px;
+}
+
+.modalTextarea::placeholder-shown {
   color: var(--text-color);
 }
