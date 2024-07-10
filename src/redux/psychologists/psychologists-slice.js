@@ -2,33 +2,26 @@ import { createSlice } from "@reduxjs/toolkit";
 import {
   loadPsychologists,
   loadPsychologistsWithPagination,
-  setFilter,
 } from "./psychologists-operations";
+import { pending, rejected } from "../../assets/functions/redux";
 
 const initialState = {
-  psychologists: [],
-  filter: {},
-  pagination: {
-    limit: 3,
-    startAt: null,
-  },
+  items: [],
+  isLoading: false,
+  error: null,
 };
 
 const psychologistSlice = createSlice({
   name: "psychologists",
   initialState,
-  reducers: {},
   extraReducers: builder => {
     builder
-      .addCase(loadPsychologists.fulfilled, (state, action) => {
-        state.psychologists = action.payload;
+      .addCase(loadPsychologists.pending, pending)
+      .addCase(loadPsychologists.fulfilled, (state, { payload }) => {
+        state.isLoading = false;
+        state.items = payload;
       })
-      .addCase(loadPsychologistsWithPagination.fulfilled, (state, action) => {
-        state.psychologists = action.payload;
-      })
-      .addCase(setFilter, (state, action) => {
-        state.filter = action.payload;
-      });
+      .addCase(loadPsychologists.rejected, rejected);
   },
 });
 

@@ -16,8 +16,8 @@
   border-radius: 30px;
   padding: 64px;
   background-color: var(--btn-text-color);
-  /* width: 982px;
-  height: 720px; */
+  max-height: 100vh;
+  overflow-y: auto;
 }
 
 .iconCross {

@@ -1,6 +1,3 @@
-export const addToFavorites = psychologistId => {
-  return {
-    type: "ADD_TO_FAVORITES",
-    payload: psychologistId,
-  };
-};
+import { createAction } from "@reduxjs/toolkit";
+
+export const toggleFavorite = createAction("favorites/toggleFavorite");
