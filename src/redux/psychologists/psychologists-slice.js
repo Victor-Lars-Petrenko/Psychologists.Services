@@ -1,8 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import {
-  loadPsychologists,
-  loadPsychologistsWithPagination,
-} from "./psychologists-operations";
+import { loadPsychologists } from "./psychologists-operations";
 import { pending, rejected } from "../../assets/functions/redux";
 
 const initialState = {

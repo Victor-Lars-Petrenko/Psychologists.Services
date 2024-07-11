@@ -72,3 +72,8 @@
   fill: none;
   stroke: var(--text-color);
 }
+
+.iconHeartFavorite {
+  fill: var(--main-color);
+  stroke: var(--main-color);
+}
