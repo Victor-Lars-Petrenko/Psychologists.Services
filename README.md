@@ -1,5 +1,14 @@
 <h1>Psychologists.Services</h1>
 
+Psychologists-services is a web application for finding and booking
+psychologists across Ukraine. Similar to popular therapist appointment services,
+PsychoConnect offers a convenient system for searching and booking psychological
+consultations, organized in an easy-to-understand interface. Users can choose
+psychologists, set appointment dates, view details and reviews, and make
+reservations in real-time. With intuitive features and a user-friendly
+interface, Psychologists-services helps individuals easily plan their mental
+health care and find the support they need.
+
 ## Made according to design
 
 [Figma](https://www.figma.com/design/I5vjNb0NsJOpQRnRpMloSY/Psychologists.Services?node-id=0-1&t=TB1JBy0HqkbejLBY-0)
